@@ -33,6 +33,8 @@ python setup.py install \
 
 %py_postclean
 
+install elisa/plugins/amp/slave.py $RPM_BUILD_ROOT%{py_sitescriptdir}/elisa/plugins/amp/
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
