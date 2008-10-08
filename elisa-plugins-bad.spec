@@ -1,12 +1,12 @@
 Summary:	"Bad" plugins for elisa
 Summary(pl.UTF-8):	"Złe" wtyczki dla elisy
 Name:		elisa-plugins-bad
-Version:	0.5.12
+Version:	0.5.13
 Release:	1
 License:	GPL v3
 Group:		Applications/Multimedia
 Source0:	http://elisa.fluendo.com/static/download/elisa/%{name}-%{version}.tar.gz
-# Source0-md5:	916bca61003ab02679f100ef5530fe9c
+# Source0-md5:	2e7363275c780d7c26e6c5bc5030d50d
 URL:		http://www.fluendo.com/elisa/
 BuildRequires:	elisa = %{version}
 Provides:	elisa-plugins = %{version}
