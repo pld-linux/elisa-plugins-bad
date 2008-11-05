@@ -1,12 +1,12 @@
 Summary:	"Bad" plugins for elisa
 Summary(pl.UTF-8):	"Złe" wtyczki dla elisy
 Name:		elisa-plugins-bad
-Version:	0.5.16
-Release:	3
+Version:	0.5.17
+Release:	1
 License:	GPL v3
 Group:		Applications/Multimedia
 Source0:	http://elisa.fluendo.com/static/download/elisa/%{name}-%{version}.tar.gz
-# Source0-md5:	38b16c8fbc6f5aa8fb550bb94d157907
+# Source0-md5:	c439d97ef37fd59589b40a288e83e669
 URL:		http://www.fluendo.com/elisa/
 BuildRequires:	elisa = %{version}
 Requires:	python-simplejson
