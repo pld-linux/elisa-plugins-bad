@@ -2,11 +2,12 @@ Summary:	"Bad" plugins for elisa
 Summary(pl.UTF-8):	"Złe" wtyczki dla elisy
 Name:		elisa-plugins-bad
 Version:	0.5.17
-Release:	1
+Release:	2
 License:	GPL v3
 Group:		Applications/Multimedia
 Source0:	http://elisa.fluendo.com/static/download/elisa/%{name}-%{version}.tar.gz
 # Source0-md5:	c439d97ef37fd59589b40a288e83e669
+Patch0:		http://launchpadlibrarian.net/19394581/elisa-plugins-poblesec-custom-subtitles.patch
 URL:		http://www.fluendo.com/elisa/
 BuildRequires:	elisa = %{version}
 Requires:	python-simplejson
@@ -22,6 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 python setup.py build
