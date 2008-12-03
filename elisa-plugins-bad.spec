@@ -1,12 +1,12 @@
 Summary:	"Bad" plugins for elisa
 Summary(pl.UTF-8):	"Złe" wtyczki dla elisy
 Name:		elisa-plugins-bad
-Version:	0.5.18
-Release:	2
+Version:	0.5.20
+Release:	1
 License:	GPL v3
 Group:		Applications/Multimedia
 Source0:	http://elisa.fluendo.com/static/download/elisa/%{name}-%{version}.tar.gz
-# Source0-md5:	a517c2477777e112a336d83e7ad9af9b
+# Source0-md5:	001223fe57f7fc7e7e9f09233096403b
 Patch0:		elisa-plugins-poblesec-custom-subtitles.patch
 #Patch0:		http://launchpadlibrarian.net/19394581/elisa-plugins-poblesec-custom-subtitles.patch
 URL:		http://www.fluendo.com/elisa/
