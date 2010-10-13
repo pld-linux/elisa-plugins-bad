@@ -18,23 +18,22 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 "Bad" plugins for elisa
 
 %description -l pl.UTF-8
-"Z?e" wtyczki dla elisy
+"Złe" wtyczki dla elisy
 
 %prep
 %setup -q
 
 %build
-python setup.py build
+%{__python} setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
-python setup.py install \
+%{__python} setup.py install \
 	--root=$RPM_BUILD_ROOT
 
 #py_postclean
 
-install elisa/plugins/amp/slave.py $RPM_BUILD_ROOT%{py_sitescriptdir}/elisa/plugins/amp/
+install -p elisa/plugins/amp/slave.py $RPM_BUILD_ROOT%{py_sitescriptdir}/elisa/plugins/amp/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
