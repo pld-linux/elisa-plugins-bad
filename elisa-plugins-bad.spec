@@ -8,6 +8,7 @@ Group:		Applications/Multimedia
 Source0:	http://elisa.fluendo.com/static/download/elisa/%{name}-%{version}.tar.gz
 # Source0-md5:	1df4d3144b1d4999dfe471571aab71d8
 URL:		http://www.fluendo.com/elisa/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	elisa = %{version}
 BuildRequires:	rpm-pythonprov
 Requires:	python-simplejson
